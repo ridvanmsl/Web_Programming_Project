@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Web_Project</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="~/js/site.js" />
+    <link rel="shortcut icon" href="img/movie-solid-24.png" type="image/x-icon">
+</head>
+<body>
+    <partial name="_HeaderPartialView" />
+    <!--=============== NAVBAR ===============-->
+    @*    <header>
+    <a href="index.html" class="logo">
+    <i class='bx bxs-movie'></i> MOVBOT
+    </a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <!--=============== MENU ===============-->
+    <ul class="navbar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#movies">Films</a></li>
+    <li><a href="#coming">Soon</a></li>
+    <li><a href="#news">News</a></li>
+    </ul>
+    <a asp-controller="Contact" asp-action="About" class="btn">Contact</a>
+    </header>*@
+
+    @RenderBody()
+
+
+
+
+    @RenderSection("contact", false)
+    <!--=============== SECTION FOOTER ===============-->
+    <section class="footer">
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i> MOVBOT
+        </a>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; MOVBOT 2022 All Rights Reserved.  </p>
+    </div>
+</body>
+</html>

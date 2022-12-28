@@ -1,0 +1,20 @@
+﻿@model IEnumerable<movies>
+
+<!--=============== SECTION MOVIES ===============-->
+<section class="movies" id="movies">
+    <h2 class="heading">Popular Movies</h2>
+    <!--Movies Container -->
+    <div class="movies-container">
+        <!-- Box 1 -->
+        @foreach (var item in Model)
+        {
+            <div class="box">
+                <div class="box-img">
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.id"><img src="@item.lilmovimg"></a>
+                </div>
+                <h3>@item.name</h3>
+                <span>@item.duration min | @item.category</span>
+            </div>
+        }
+    </div>
+</section>

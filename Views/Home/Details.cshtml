@@ -1,0 +1,92 @@
+@model movies
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVBOT</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="img/movie-solid-24.png" type="image/x-icon" >
+   
+</head>
+<body>
+  
+    <!--=============== PLAY MOVIE ===============-->
+    <div class="movie-container">
+        <!-- Play Img  -->
+        <img src="@Model.bigmovimg" class="play-img">
+        <!-- Play Text -->
+        <div class="play-text">
+            <h2>@Model.name</h2>
+            <!-- tags -->
+            <div class="tags">
+                <span>@Model.category</span>
+            </div>
+
+            <!-- imdb -->
+            <a target="_blank" href="https://www.imdb.com/title/tt6654210/?ref_=nv_sr_srsg_0">
+                <div class="imdb">
+                    <i class='bx bxl-imdb' ></i>
+                    <p><span>@Model.imdb</span>/ 10</p>
+                </div>
+                </a>
+
+      
+            <!-- <div class="trailer">
+                <a href="#" class="btn">
+                    <i class='bx bx-right-arrow'></i>
+                    <span>Fragmanı İzle</span>
+                </a>
+                 </div>  -->
+
+                 <!-- play btn -->
+                 <i class='bx bx-right-arrow play-movie'></i>
+                 <!-- video container -->
+                 <div class="video-container">
+                     <!-- video-box -->
+                     <div class="video-box">
+                        <iframe id="myvideo" controls src="@Model.trailerLink"  frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>
+                        <!-- close video -->
+                        <i class='bx bx-x close-video'></i>
+                    </div>
+                 </div>
+        </div>
+
+    </div>
+
+    <!--=============== MOVIE ABOUT ===============-->
+    <div class="about-movie">
+        <h2>Summary</h2>
+        <p>@Model.summary</p>
+        <!-- movie cast -->
+        <h2 class="cast-heading">Actors</h2>
+        <div class="cast">
+            <div class="cast-box">
+                <a href="@Model.actor1_url" target="blank"><img src="@Model.actor1img" class="cast-img"></a>
+                <span class="cast-title">@Model.actor1</span>
+            </div>
+            <div class="cast-box">
+                <a href="@Model.actor2_url" target="blank"><img src="@Model.actor2img" class="cast-img"></a>
+                <span class="cast-title">@Model.actor2</span>
+            </div>
+            <div class="cast-box">
+                <a href="@Model.actor3_url" target="blank"><img src="@Model.actor3img" class="cast-img"></a>
+                <span class="cast-title">@Model.actor3</span>
+            </div>
+            <div class="cast-box">
+                <a href="@Model.actor4_url" target="blank"><img src="@Model.actor4img" class="cast-img"></a>
+                <span class="cast-title">@Model.actor4</span>
+            </div>
+            <div class="cast-box">
+                <a href="@Model.actor5_url" target="blank"><img src="@Model.actor5img" class="cast-img"></a>
+                <span class="cast-title">@Model.actor5</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
