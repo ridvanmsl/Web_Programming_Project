@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jj3KvlyLlcCovJogS7FCwKG304N/9af28tOkm5brJZxgrMz8ZiUy0DBRdKK/BhgE9DY3zY2/KQ6avVScatKWmw==",
+  "dgSpecHash": "xkln0FL+Oq0mt4rh54QGLlA8Hf2RbvzRiIy9cUGy9bKmwkeRakDFwxgb1I/mgc6iqSSMza/xKh5MBAJkKgRRnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\WebAssignment.csproj",
+  "projectFilePath": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\Web_Programming_Project\\WebAssignment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ridva\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ridva\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

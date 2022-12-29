@@ -8,6 +8,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<moviesContext>(options =>
     options.UseSqlServer(builder.Configuration
     .GetConnectionString("MoviesConnectionString")));
+builder.Services.AddDbContext<newsContext>(options =>
+    options.UseSqlServer(builder.Configuration
+    .GetConnectionString("MoviesConnectionString")));
 
 var app = builder.Build();
 

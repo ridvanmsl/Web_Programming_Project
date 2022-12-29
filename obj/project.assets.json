@@ -3515,11 +3515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\WebAssignment.csproj",
+      "projectUniqueName": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\Web_Programming_Project\\WebAssignment.csproj",
       "projectName": "WebAssignment",
-      "projectPath": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\WebAssignment.csproj",
+      "projectPath": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\Web_Programming_Project\\WebAssignment.csproj",
       "packagesPath": "C:\\Users\\ridva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\obj\\",
+      "outputPath": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\Web_Programming_Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
