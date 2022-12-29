@@ -4,8 +4,19 @@
     <!--Coming Container -->
     <div class="coming-container swiper">
         <div class="swiper-wrapper">
+
+            @foreach(var item in Model){
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <a asp-controller="Home" asp-action="Details" asp-route-id="@item.id"><img src="@item.lilmovimg" alt=""></a>
+                    </div>
+                    <h3>@item.name</h3>
+                    <span>@item.category</span>
+                </div>
+            }
+
             <!-- Box 1 -->
-            <div class="swiper-slide box">
+            @*<div class="swiper-slide box">
                 <div class="box-img">
                     <a href="avatar-2.html"><img src="img/q2.jpg" alt=""></a>
                 </div>
@@ -102,7 +113,7 @@
                 <h3>John Wick: Chapter 4</h3>
                 <span>Action, Crime, Thriller</span>
                 <h6>24 March 2023</h6>
-            </div>
+            </div>*@
 
         </div>
 
