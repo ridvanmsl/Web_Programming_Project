@@ -27,6 +27,7 @@
         public string? actor5img { get; set; }
         public string? actor5_url { get; set; }
         public bool? ispopular { get; set; }
+        public bool? isOut { get; set; }
 
     }
 }
