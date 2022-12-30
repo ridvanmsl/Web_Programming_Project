@@ -5,7 +5,7 @@ namespace WebAssignment.Context
 {
     public class newsContext : DbContext
     {
-        public newsContext(DbContextOptions options) : base(options)
+        public newsContext(DbContextOptions<newsContext> options) : base(options)
         {
         }
 

@@ -5,7 +5,7 @@ namespace WebAssignment.Context
 {
     public class moviesContext : DbContext
     {
-        public moviesContext(DbContextOptions options) : base(options)
+        public moviesContext(DbContextOptions<moviesContext> options) : base(options)
         {
         }
 
