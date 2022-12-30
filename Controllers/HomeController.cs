@@ -22,12 +22,16 @@ namespace WebAssignment.Controllers
             var content = popmovs.Where(i => i.ispopular == true);
             var _news = await newscontext.news.ToListAsync();
             var movs = await movcontext.movies.ToListAsync();
+            var movcontent = movs.Where(i => i.isOut == true);
+            var willoutmovs = await movcontext.movies.ToListAsync();
+            var willoutmovscontent = willoutmovs.Where(i => i.isOut == false);
 
 
             var vwmodel = new viewmodel();
             vwmodel.popmvs = content;
             vwmodel.nws = _news;
-            vwmodel.mvs = movs;
+            vwmodel.mvs = movcontent;
+            vwmodel.willoutmovs = willoutmovscontent;
             return View(vwmodel);
         }
         public async Task<IActionResult> DetailsAsync(int? id)

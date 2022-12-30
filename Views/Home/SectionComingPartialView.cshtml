@@ -5,7 +5,7 @@
     <div class="coming-container swiper">
         <div class="swiper-wrapper">
 
-            @foreach(var item in Model){
+            @foreach(var item in Model.willoutmovs){
                 <div class="swiper-slide box">
                     <div class="box-img">
                         <a asp-controller="Home" asp-action="Details" asp-route-id="@item.id"><img src="@item.lilmovimg" alt=""></a>
