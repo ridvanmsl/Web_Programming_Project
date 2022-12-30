@@ -73,7 +73,7 @@
         <!--Movies Container -->
         <div class="movies-container">
             <!-- Box 1 -->
-            @foreach(var item in Model.mvs){
+            @foreach(var item in Model.popmvs){
                 <div class="box">
                     <div class="box-img">
                         <a asp-controller="Home" asp-action="Details" asp-route-id="@item.id"><img src="@item.lilmovimg"></a>
@@ -92,9 +92,19 @@
         <!--Movies Container -->
         
         <div class="movies-container">
+            @foreach(var item in Model.mvs){
+                <div class="box active">
+                    <div class="box-img">
+                        <a asp-controller="Home" asp-action="Details" asp-route-id="@item.id"><img src="@item.lilmovimg" alt=""></a>
+                    </div>
+                    <h3>@item.name</h3>
+                    <span>@item.duration min | @item.category</span>
+                </div>
+            }
+
             <!-- Box 1 -->
 
-            <div class="box action fantastic deactive">
+            @*<div class="box action fantastic deactive">
                 <div class="box-img">
                     <a href="doctor-strange.html"><img src="img/m1.jpg" alt=""></a>
                 </div>
@@ -279,7 +289,7 @@
                 </div>
                 <h3>Lucy</h3>
                 <span>89 min | Action, Sci-fi, Thriller</span>
-            </div>
+            </div>*@
     </section>
 
     <partial name="LatestMovieNewsPartialView" />

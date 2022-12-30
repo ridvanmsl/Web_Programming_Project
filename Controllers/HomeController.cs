@@ -18,13 +18,16 @@ namespace WebAssignment.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var movs = await movcontext.movies.ToListAsync();
-            var content = movs.Where(i => i.ispopular == true);
+            var popmovs = await movcontext.movies.ToListAsync();
+            var content = popmovs.Where(i => i.ispopular == true);
             var _news = await newscontext.news.ToListAsync();
+            var movs = await movcontext.movies.ToListAsync();
+
 
             var vwmodel = new viewmodel();
-            vwmodel.mvs = content;
+            vwmodel.popmvs = content;
             vwmodel.nws = _news;
+            vwmodel.mvs = movs;
             return View(vwmodel);
         }
         public async Task<IActionResult> DetailsAsync(int? id)
