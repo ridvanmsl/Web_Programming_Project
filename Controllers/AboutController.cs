@@ -13,7 +13,7 @@ namespace WebAssignment.Controllers
         [HttpPost]
         public IActionResult Contact(string name)
         {
-            ViewBag.Name = name;
+            ViewBag.Name = name.ToUpper();
             return View("Show");
         }
     }
