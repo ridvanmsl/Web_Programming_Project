@@ -16,55 +16,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <!--=============== SECTION HOME ===============-->
-    <section class="home swiper" id="home">
 
-        <div class="swiper-wrapper">
-
-            <!-- Box 1 -->
-            <div class="swiper-slide container">
-                <img src="img/hero.jpg" alt="">
-                <div class="home-text">
-                    <span>The Batman</span>
-                    <h1>Zoom Into The Darkness</h1>
-                    <a asp-controller="Home" asp-action="Details" asp-route-id="6" class="btn">Summary</a>
-                    <a asp-controller="Home" asp-action="Details" asp-route-id="6" class="play">
-                        <i class='bx bx-play'></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Box 2 -->
-            <div class="swiper-slide container">
-                <img src="img/hero2.jpg" alt="">
-                <div class="home-text">
-                    <span> Doctor Strange in the Multiverse of Madness</span>
-                    <h1>Multiverse Of Madness</h1>
-                    <a asp-controller="Home" asp-action="Details" asp-route-id="33" class="btn">Summary</a>
-                    <a asp-controller="Home" asp-action="Details" asp-route-id="33" class="play">
-                        <i class='bx bx-play'></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Box 3 -->
-            <div class="swiper-slide container">
-                <img src="img/hero3.jpg" alt="">
-                <div class="home-text">
-                    <span>Dune</span>
-                    <h1>Planet Of Desert</h1>
-                    <a asp-controller="Home" asp-action="Details" asp-route-id="10" class="btn">Summary</a>
-                    <a asp-controller="Home" asp-action="Details" asp-route-id="10" class="play">
-                        <i class='bx bx-play'></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="swiper-pagination"></div>
-
-    </section>
+    @await Component.InvokeAsync("Swiper")
+    
 
 
     <!--=============== SECTION MOVIES ===============-->
