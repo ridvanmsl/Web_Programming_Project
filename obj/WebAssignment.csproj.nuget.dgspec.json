@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\Web_Programming_Project\\WebAssignment.csproj": {}
+    "/Users/armanyayci/Documents/GitHub/Web_Programming_Project/WebAssignment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\Web_Programming_Project\\WebAssignment.csproj": {
+    "/Users/armanyayci/Documents/GitHub/Web_Programming_Project/WebAssignment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\Web_Programming_Project\\WebAssignment.csproj",
+        "projectUniqueName": "/Users/armanyayci/Documents/GitHub/Web_Programming_Project/WebAssignment.csproj",
         "projectName": "WebAssignment",
-        "projectPath": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\Web_Programming_Project\\WebAssignment.csproj",
-        "packagesPath": "C:\\Users\\ridva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ridva\\OneDrive\\Masaüstü\\WebAssignment\\Web_Programming_Project\\obj\\",
+        "projectPath": "/Users/armanyayci/Documents/GitHub/Web_Programming_Project/WebAssignment.csproj",
+        "packagesPath": "/Users/armanyayci/.nuget/packages/",
+        "outputPath": "/Users/armanyayci/Documents/GitHub/Web_Programming_Project/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ridva\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/armanyayci/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }

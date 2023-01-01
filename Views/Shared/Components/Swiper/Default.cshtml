@@ -1,0 +1,26 @@
+﻿@model IEnumerable<movies>
+
+
+<!--=============== SECTION HOME ===============-->
+<section class="home swiper" id="home">
+
+    <div class="swiper-wrapper">
+
+        @foreach (var item in Model)
+        {
+            <div class="swiper-slide container">
+                <img src="@item.bigmovimg" alt="">
+                <div class="home-text">
+                    <span>@item.name</span>
+                    <h1>@item.summary</h1>
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.id" class="btn">Summary</a>
+                    <a asp-controller="Home" asp-action="Details" asp-route-id="@item.id" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="swiper-pagination"></div>
+
+</section>
