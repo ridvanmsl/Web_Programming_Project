@@ -6,6 +6,7 @@ The Used Technologies <br />
 1- .NET Core 6.0 MVC Architecture <br />
 2- HTML <br />
 3- CSS <br />
-4- JAVASCRIPT <br />
-5- MS SQL <br />
-6- ENTITY FRAMEWORK COR <br />
+4- BOOTSTRAP <br />
+5- JAVASCRIPT <br />
+6- MS SQL <br />
+7- ENTITY FRAMEWORK COR <br />
