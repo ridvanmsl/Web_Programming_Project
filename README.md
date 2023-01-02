@@ -9,4 +9,4 @@ The Used Technologies <br />
 4- BOOTSTRAP <br />
 5- JAVASCRIPT <br />
 6- MS SQL <br />
-7- ENTITY FRAMEWORK COR <br />
+7- ENTITY FRAMEWORK CORE <br />
